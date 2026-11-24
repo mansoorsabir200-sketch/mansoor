@@ -3,7 +3,7 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
-import { ArrowUpRight, Code2, Sparkles } from "lucide-react";
+import { ArrowUpRight, Code2, Download, Sparkles } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
@@ -35,20 +35,17 @@ export default function Hero() {
           className="space-y-7"
         >
           {/* Welcome Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700 dark:border-blue-900 dark:bg-blue-950/50 dark:text-blue-400">
-            <Sparkles size={16} />
-            Welcome to my portfolio
-          </div>
+        
 
           {/* Heading */}
           <div>
-            <p className="mb-3 text-lg font-medium text-gray-600 dark:text-gray-400">
+            <p className="mb-3 text-xl font-medium text-gray-600 dark:text-gray-400">
               Hello, I'm
             </p>
 
             <h1 className="text-5xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white md:text-6xl lg:text-7xl">
               Mansoor
-              <span className="block text-blue-600">
+              <span className=" text-blue-600">
                 Sabir.
               </span>
             </h1>
@@ -116,22 +113,7 @@ export default function Hero() {
           </div>
 
           {/* Technology Stack */}
-          <div className="border-t border-gray-200 pt-6 dark:border-gray-800">
-            <p className="mb-4 text-sm font-semibold text-gray-500 dark:text-gray-400">
-              TECHNOLOGIES I WORK WITH
-            </p>
 
-            <div className="flex flex-wrap gap-2">
-              {technologies.map((tech) => (
-                <span
-                  key={tech}
-                  className="rounded-lg border border-gray-200 bg-white px-3 py-2 text-xs font-medium text-gray-700 shadow-sm dark:border-gray-800 dark:bg-gray-900 dark:text-gray-300"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </div>
         </motion.div>
 
         {/* RIGHT SIDE - PROFILE IMAGE */}
@@ -164,19 +146,19 @@ export default function Hero() {
             </motion.div>
 
             {/* Floating Developer Badge */}
-            <div className="absolute -bottom-6 -left-8 flex items-center gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow-xl dark:border-gray-800 dark:bg-gray-900">
-              <div className="rounded-lg bg-blue-100 p-3 text-blue-600 dark:bg-blue-950">
-                <Code2 size={25} />
-              </div>
+            <div className="absolute  -bottom-7 flex items-center gap-3 rounded-xl border border-gray-200/45 bg-white/35 p-2 shadow-xl dark:border-gray-800 dark:bg-gray-900">
+            
 
-              <div>
-                <p className="font-bold text-gray-900 dark:text-white">
-                  Web Developer
-                </p>
-                <p className="text-xs text-gray-500 dark:text-gray-400">
-                  Building digital experiences
-                </p>
-              </div>
+               <Link
+              href="#projects"
+              className="group inline-flex items-center gap-3 rounded-xl bg-gray-700  px-4 py-2 font-semibold text-white  "
+            >
+              Donload Reusme
+              <Download
+                size={20}
+                className="transition  group-hover:translate-y-1"
+              />
+            </Link>
             </div>
 
           </div>

@@ -1,12 +1,41 @@
 
 "use client";
 
-import { motion } from "motion/react";
+
+// import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import Link from "next/link";
 import { ArrowUpRight, Code2, Download, Sparkles } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useEffect, useState } from "react";
+
+
 
 export default function Hero() {
+
+
+
+const images = [
+  "/sabir.png",
+  "/mansoor sabor.png",
+  "/mansoor.jpg",  
+];
+
+
+const [currentImage, setCurrentImage] = useState(0);
+
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentImage((prev) => (prev + 1) % images.length);
+  }, 4000);
+
+  return () => clearInterval(interval);
+}, [images.length]);
+
+
+
+
   const technologies = [
     "HTML",
     "CSS",
@@ -129,7 +158,7 @@ export default function Hero() {
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-blue-500 to-purple-600 opacity-20 blur-xl" />
 
             {/* Image Container */}
-            <motion.div
+            {/* <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{
                 duration: 5,
@@ -143,7 +172,36 @@ export default function Hero() {
                 alt="Mansoor Sabir - Full-Stack Web Developer"
                 className="h-full w-full object-cover"
               />
-            </motion.div>
+            </motion.div> */}
+
+            {/* -------------- */}
+
+
+<motion.div
+  animate={{ y: [0, -10, 0] }}
+  transition={{
+    duration: 5,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="relative h-[350px] w-[300px] overflow-hidden rounded-[2rem] border-4 border-white bg-gray-200 shadow-2xl dark:border-gray-800 dark:bg-gray-900 sm:h-[420px] sm:w-[360px]"
+>
+  <AnimatePresence mode="wait">
+    <motion.img
+      key={currentImage}
+      src={images[currentImage]}
+      alt="Mansoor Sabir - Full-Stack Web Developer"
+      initial={{ opacity: 0, scale: 1.08 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.95 }}
+      transition={{ duration: 0.7 }}
+      className="absolute inset-0 h-full w-full object-cover"
+    />
+  </AnimatePresence>
+</motion.div>
+
+
+            {/* ------------ */}
 
             {/* Floating Developer Badge */}
             <div className="absolute  -bottom-7 flex items-center gap-3 rounded-xl border border-gray-200/45 bg-white/35 p-2 shadow-xl dark:border-gray-800 dark:bg-gray-900">

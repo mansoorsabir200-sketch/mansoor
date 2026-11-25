@@ -11,19 +11,6 @@ import {
   Mail,
 } from "lucide-react";
 
-const skills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Tailwind CSS",
-  "Drizzle ORM",
-  "PostgreSQL",
-  "Git & GitHub",
-  "Node.js",
-  "TypeScript",
-];
 
 export default function About() {
   return (
@@ -160,30 +147,8 @@ export default function About() {
           </motion.div>
         </div>
 
-        {/* Skills */}
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="mt-20"
-        >
-          <h3 className="mb-7 text-center text-2xl font-bold">
-            My Technologies & Skills
-          </h3>
 
-          <div className="flex flex-wrap justify-center gap-3">
-            {skills.map((skill) => (
-              <span
-                key={skill}
-                className="rounded-full border border-gray-200 bg-white px-5 py-3 text-sm font-medium shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-blue-600 dark:border-gray-800 dark:bg-gray-900"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </motion.div>
-
+       
       </div>
     </section>
   );

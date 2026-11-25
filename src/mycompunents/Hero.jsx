@@ -211,7 +211,7 @@ useEffect(() => {
               href="#projects"
               className="group inline-flex items-center gap-3 rounded-xl bg-gray-700  px-4 py-2 font-semibold text-white  "
             >
-              Donload Reusme
+              Download Reusme
               <Download
                 size={20}
                 className="transition  group-hover:translate-y-1"

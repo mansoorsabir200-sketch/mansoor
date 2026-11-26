@@ -7,16 +7,16 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "Personal Portfolio",
+    title: "pahrmacy System",
     description:
       "A modern and responsive portfolio website to introduce myself, showcase my skills, and share my work.",
     image: "/projects/portfolio.png",
-    technologies: ["Next.js", "Tailwind CSS", "Motion"],
+    technologies: ["Next.js", "Tailwind CSS", "Motion","postgresql","type script"],
     github: "https://github.com/yourusername/portfolio",
     demo: "https://yourportfolio.com",
   },
   {
-    title: "Task Management App",
+    title: "Digital chash ladger",
     description:
       "A task management application concept designed to help users organize their daily activities.",
     image: "/projects/task-app.png",

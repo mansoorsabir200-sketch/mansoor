@@ -11,7 +11,7 @@ const posts = [
       "Learn the basic concepts of JavaScript, including variables, functions, arrays, and objects.",
     category: "JavaScript",
     date: "Programming",
-    image: "/blog/javascript.png",
+    image: "/it.jpg",
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
@@ -20,7 +20,7 @@ const posts = [
       "Discover React components, props, state, and how to build interactive user interfaces.",
     category: "React",
     date: "Frontend",
-    image: "/blog/react.png",
+    image: "/study.jpg",
     link: "https://react.dev/learn",
   },
   {
@@ -29,7 +29,7 @@ const posts = [
       "Explore Next.js and learn how to create modern web applications using React.",
     category: "Next.js",
     date: "Web Development",
-    image: "/blog/nextjs.png",
+    image: "/css.jpg",
     link: "https://nextjs.org/learn",
   },
 ];

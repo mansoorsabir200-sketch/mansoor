@@ -27,73 +27,73 @@ const technologies = [
     name: "HTML5",
     icon: FaHtml5,
     color: "text-orange-500",
-    level: "Advanced",
+
   },
   {
     name: "CSS3",
     icon: FaCss3Alt,
     color: "text-blue-500",
-    level: "Advanced",
+
   },
   {
     name: "JavaScript",
     icon: FaJs,
     color: "text-yellow-400",
-    level: "Intermediate",
+
   },
   {
     name: "React",
     icon: FaReact,
     color: "text-cyan-400",
-    level: "Intermediate",
+    
   },
   {
     name: "Next.js",
     icon: SiNextdotjs,
     color: "text-gray-900 dark:text-white",
-    level: "Intermediate",
+    
   },
   {
     name: "Tailwind CSS",
     icon: SiTailwindcss,
     color: "text-cyan-500",
-    level: "Intermediate",
+    
   },
   {
     name: "Node.js",
     icon: FaNodeJs,
     color: "text-green-600",
-    level: "Learning",
+    
   },
   {
     name: "Express.js",
     icon: SiExpress,
     color: "text-gray-800 dark:text-white",
-    level: "Learning",
+    
   },
   {
     name: "MongoDB",
     icon: SiMongodb,
     color: "text-green-500",
-    level: "Learning",
+    
   },
   {
     name: "TypeScript",
     icon: SiTypescript,
     color: "text-blue-600",
-    level: "Learning",
+    
   },
   {
     name: "Git",
     icon: FaGitAlt,
     color: "text-orange-600",
-    level: "Intermediate",
+    
   },
   {
     name: "GitHub",
     icon: FaGithub,
     color: "text-gray-900 dark:text-white",
-    level: "Intermediate",
+    
   },
 ];
 
@@ -140,9 +140,7 @@ export default function Technologies() {
                   {tech.name}
                 </h3>
 
-                <span className="text-xs text-gray-500 dark:text-gray-400">
-                  {tech.level}
-                </span>
+             
               </Card>
             );
           })}

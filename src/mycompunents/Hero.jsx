@@ -157,24 +157,7 @@ useEffect(() => {
             {/* Decorative Background */}
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-blue-500 to-purple-600 opacity-20 blur-xl" />
 
-            {/* Image Container */}
-            {/* <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="relative h-[350px] w-[300px] overflow-hidden rounded-[2rem] border-4 border-white bg-gray-200 shadow-2xl dark:border-gray-800 dark:bg-gray-900 sm:h-[420px] sm:w-[360px]"
-            >
-              <img
-                src="/sabir.png"
-                alt="Mansoor Sabir - Full-Stack Web Developer"
-                className="h-full w-full object-cover"
-              />
-            </motion.div> */}
-
-            {/* -------------- */}
+          
 
 
 <motion.div
@@ -209,6 +192,8 @@ useEffect(() => {
 
                <Link
               href="#projects"
+                download="/mycv.pdf"
+            
               className="group inline-flex items-center gap-3 rounded-xl bg-gray-700  px-4 py-2 font-semibold text-white  "
             >
               Download Reusme
